@@ -2,7 +2,7 @@
   "name": "harshiniwho.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://harshiniwho.github.io/harshiniwho.github.io",
+  "homepage": "https://harshiniwho.github.io/harshiniwho.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
