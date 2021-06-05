@@ -1,10 +1,15 @@
 import './App.css';
+import Navbar from './app/Navbar';
+import { Typography } from '@material-ui/core'
 
 function App() {
+  
   return (
     <div className="App">
-      <h1>Hi! Welcome to another website* that should just be a resume</h1>
-      <p>* - a work in progress</p>
+      <Navbar />
+      <Typography variant={'h2'} >
+          Hello! 
+      </Typography>
     </div>
   );
 }
