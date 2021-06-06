@@ -36,10 +36,10 @@ function Jumbotron() {
             <img className={classes.img} src={faceImg}></img>
             <div className={classes.content}>
                 <Typography className={classes.name} variant={"h2"}>
-                    <b><i> &nbsp; Harshini R &nbsp;  </i></b>
+                    <b><i> &nbsp; Harshini R. &nbsp;  </i></b>
                 </Typography>
                 <Typography className={classes.designations} variant={"h6"}>
-                    &emsp;&emsp; &emsp; &emsp;Software Engineer <br />
+                    &emsp;&emsp; &emsp; &emsp; Software Engineer <br />
                     &emsp;&emsp; &emsp; &emsp; Writer <br />
                     &emsp;&emsp; &emsp; &emsp; Feminist <br />
                 </Typography>
