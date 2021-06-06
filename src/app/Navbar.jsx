@@ -35,6 +35,6 @@ function Navbar() {
             <GitHub />
         </Toolbar>
     );
-};
+}
 
 export default Navbar;

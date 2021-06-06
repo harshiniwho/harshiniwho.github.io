@@ -1,15 +1,13 @@
-import './App.css';
+// import './App.css';
 import Navbar from './app/Navbar';
-import { Typography } from '@material-ui/core'
+import Jumbotron from './app/Jumbotron';
 
 function App() {
   
   return (
     <div className="App">
       <Navbar />
-      <Typography variant={'h2'} >
-          Hello! 
-      </Typography>
+      <Jumbotron />
     </div>
   );
 }
