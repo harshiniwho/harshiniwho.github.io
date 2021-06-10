@@ -7,15 +7,19 @@ function Jumbotron() {
     const useStyles = makeStyles({
         root: {
             textAlign: 'center',
+            fontFamily: "'Old Standard TT', serif",
         },
         name: {
+            textAlign: 'left',
             backgroundColor: 'black',
             color: 'white',
             width: '25rem',
             height: '7rem',
             boxShadow: '1rem',
+            fontFamily: "'Lato', serif"
         },
         content: {
+            display: 'inline-block',
             float: 'left',
             zIndex: '700',
             margin: '15rem 0 0 0',
@@ -23,11 +27,12 @@ function Jumbotron() {
         img: {
             float: 'left',
             width: '100vh',
-            margin: '2rem 30rem 0 0',
-            marginRight:'-8rem'
+            marginRight:'-8rem',
+            marginTop: '5rem'
         },
         designations: {
             textAlign: 'left',
+            fontFamily: "'Old Standard TT', serif"
         }
      });
     const classes = useStyles();
@@ -36,7 +41,7 @@ function Jumbotron() {
             <img className={classes.img} src={faceImg}></img>
             <div className={classes.content}>
                 <Typography className={classes.name} variant={"h2"}>
-                    <b><i> &nbsp; Harshini R. &nbsp;  </i></b>
+                    <b> &nbsp; Harshini R. &nbsp; </b>
                 </Typography>
                 <Typography className={classes.designations} variant={"h6"}>
                     &emsp;&emsp; &emsp; &emsp; Software Engineer <br />

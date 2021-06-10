@@ -5,12 +5,6 @@ import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Typography from '@material-ui/core/Typography';
-
-import { Apps } from "@material-ui/icons";
-
-import CustomDropdown from './CustomDropdown';
-import Button from "./Button";
 
 import styles from '../css/headerLinkStyles';
 
@@ -20,7 +14,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Menu"
@@ -42,38 +36,48 @@ export default function HeaderLinks(props) {
             </a>,
           ]}
         />
+      </ListItem> */}
+      <ListItem className={classes.listItem}>
+        <Link className={classes.dropdownLink}>
+          <h3>
+              home
+          </h3>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button className={classes.navLink}>
-        <Typography variant={"h6"}>
-            home.
-        </Typography>
-        </Button>
+      <Link className={classes.dropdownLink}>
+          <h3>
+              about
+          </h3>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Typography variant={"h6"}>
-            about.
-        </Typography>
+      <Link className={classes.dropdownLink}>
+          <h3>
+              work
+          </h3>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Typography variant={"h6"}>
-            work.
-        </Typography>
+      <Link className={classes.dropdownLink}>
+          <h3>
+              writing
+          </h3>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Typography variant={"h6"}>
-            writing.
-        </Typography>
+      <Link className={classes.dropdownLink}>
+          <h3>
+              feminism
+          </h3>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Typography variant={"h6"}>
-            feminism.
-        </Typography>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Typography variant={"h6"}>
-            contact.
-        </Typography>
+      <Link className={classes.dropdownLink}>
+          <h3>
+              contact
+          </h3>
+        </Link>
       </ListItem>
     </List>
   );

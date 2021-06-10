@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <Navbar
-        brand="Harshini Ramanujam"
         rightLinks={<Navlinks />}
         absolute
         color="black"

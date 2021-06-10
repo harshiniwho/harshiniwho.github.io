@@ -112,6 +112,9 @@ const headerLinksStyle = (theme) => ({
   marginRight5: {
     marginRight: "5px",
   },
+  tiles: {
+    font: "'Old Standard TT', serif"
+  }
 });
 
 export default headerLinksStyle;
