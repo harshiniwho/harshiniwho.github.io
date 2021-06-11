@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
-import styles from '../css/headerLinkStyles';
+import styles from '../../css/headerLinkStyles';
 
 const useStyles = makeStyles(styles);
 
@@ -38,42 +38,35 @@ export default function HeaderLinks(props) {
         />
       </ListItem> */}
       <ListItem className={classes.listItem}>
-        <Link className={classes.dropdownLink}>
+        <Link to='/' className={classes.dropdownLink}>
           <h3>
               home
           </h3>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Link className={classes.dropdownLink}>
+      <Link to='/resume' className={classes.dropdownLink}>
           <h3>
-              about
+              experience
           </h3>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Link className={classes.dropdownLink}>
-          <h3>
-              work
-          </h3>
-        </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-      <Link className={classes.dropdownLink}>
+      <Link to='/writing' className={classes.dropdownLink}>
           <h3>
               writing
           </h3>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Link className={classes.dropdownLink}>
+      <Link to='/feminism' className={classes.dropdownLink}>
           <h3>
               feminism
           </h3>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Link className={classes.dropdownLink}>
+      <Link to='/contact' className={classes.dropdownLink}>
           <h3>
               contact
           </h3>

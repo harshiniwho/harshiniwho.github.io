@@ -1,8 +1,10 @@
 import React from 'react';
+import { MailOutline, LinkedIn, GitHub } from '@material-ui/icons';
 
 function Contact() {
     return (
-        <List>
+        <>
+        {/* <List>
             <ListItem className={classes.listItem}>
                 <Tooltip
                 id="instagram-twitter"
@@ -54,7 +56,13 @@ function Contact() {
                 </Button>
                 </Tooltip>
             </ListItem>
-      </List>
+      </List> */}
+      <div>
+      <MailOutline />
+      <LinkedIn />
+      <GitHub />
+  </div>
+  </>
     );
 }
 

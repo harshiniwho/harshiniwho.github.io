@@ -1,22 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
 
 import App from './App';
 
 import './index.css';
 
-var hist = createBrowserHistory();
-
 ReactDOM.render(
-  <React.StrictMode>
-   <Router history={hist}>
-      <Switch>
-        <Route path="/" component={App} />
-      </Switch>
-    </Router>
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 

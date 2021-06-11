@@ -16,9 +16,9 @@ import Icon from "@material-ui/core/Icon";
 import Popper from "@material-ui/core/Popper";
 
 // core components
-import Button from './Button';
+import Button from '../Button';
 
-import styles from '../css/customDropdownStyle';
+import styles from '../../css/customDropdownStyle';
 
 const useStyles = makeStyles(styles);
 

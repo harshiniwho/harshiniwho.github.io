@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from "classnames";
 
-import styles from '../css/headerStyles';
+import styles from '../../css/headerStyles';
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -10,7 +10,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 import { makeStyles } from '@material-ui/core';
 
-import brandImage from '../assets/brand-harshini-resized.gif';
+import brandImage from '../../assets/brand-harshini-resized.gif';
 
 function Navbar(props) {
     const useStyles = makeStyles(styles);
