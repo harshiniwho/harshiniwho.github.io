@@ -4,6 +4,15 @@ const transition = {
   transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)",
 };
 
+const preventImage = {
+    userDrag: 'none', 
+    userSelect: 'none', 
+    mozUserSelect: 'none', 
+    webkitUserDrag: 'none', 
+    webkitUserSelect:'none', 
+    msUserSelect: 'none', 
+};
+
 const containerFluid = {
   paddingRight: "15px",
   paddingLeft: "15px",
@@ -194,4 +203,5 @@ export {
   cardTitle,
   cardLink,
   cardSubtitle,
+  preventImage
 };

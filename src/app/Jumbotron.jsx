@@ -3,6 +3,7 @@ import { makeStyles, Typography } from '@material-ui/core';
 
 import content from './commons/content';
 
+import { preventImage } from '../css/baseStyles';
 import faceImg from '../assets/face-circle.png';
 
 function Jumbotron() {
@@ -25,6 +26,7 @@ function Jumbotron() {
             margin: '12rem 0 0rem 0',
         },
         img: {
+            ...preventImage,
             float: 'left',
             left: '2%',
             position: 'relative',
@@ -40,7 +42,7 @@ function Jumbotron() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <img className={classes.img} src={faceImg}></img>
+            <img alt="Harshini's face in a circle" className={classes.img} src={faceImg}></img>
             <div className={classes.content}>
                 <Typography className={classes.name} variant={"h2"}>
                     {content.opening}

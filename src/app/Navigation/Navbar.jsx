@@ -9,6 +9,7 @@ import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 import { makeStyles } from '@material-ui/core';
+import { preventImage } from '../../css/baseStyles';
 
 import brandImage from '../../assets/brand-harshini-resized.gif';
 
@@ -28,6 +29,7 @@ function Navbar(props) {
     };
     const useStyles2 = makeStyles({
         gif: {
+            ...preventImage,
             width: '15rem',
             height: '4.5rem',
             objectFit: 'cover'
