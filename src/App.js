@@ -6,7 +6,7 @@ import Contact from './app/Contact';
 import Component from './app/Component';
 import Feminism from './app/Feminism';
 import Jumbotron from './app/Jumbotron';
-import Resume from './app/Resume';
+import Resume from './app/Resume/Resume';
 import Writing from './app/Writing';
 
 var hist = createBrowserHistory();

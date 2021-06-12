@@ -58,6 +58,7 @@ function Contact() {
                     {content.contactTitle}
             </Typography>
             <div className={classes.content}>
+                {/* TODO: remove the break lines */}
                 <br />
                 <br />
                 <br />
