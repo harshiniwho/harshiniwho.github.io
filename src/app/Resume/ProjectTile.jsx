@@ -1,7 +1,9 @@
 import React from 'react';
-import { List, ListItem, makeStyles, Typography } from '@material-ui/core';
+import { makeStyles, Typography, Link } from '@material-ui/core';
+import LinkIcon from '@material-ui/icons/Link';
 
-function WorkTile(props) {
+
+function ProjectTile(props) {
     const useStyles = makeStyles({
         name: {
             textAlign: 'left',
@@ -16,23 +18,23 @@ function WorkTile(props) {
     return (
         <div>
             <Typography className={classes.name} variant={"h5"}>
-                {props.company}
+                {props.projectTitle}
             </Typography>
-            <Typography className={classes.name} variant={"h5"}>
-                {props.title}
-            </Typography>
+            <Link to={props.link}>
+                <LinkIcon />
+            </Link>
             <Typography className={classes.name} variant={"h6"}>
-                    <i>{props.duration}</i>
+                    <i>{props.description}</i>
             </Typography>   
-            <List>
+            {/* <List>
                 {props.details.map((detail) => {
                     return (<ListItem className={classes.listItem}>
                         {detail}
                     </ListItem>)
                 })}
-            </List>
+            </List> */}
         </div>
     );
 }
 
-export default WorkTile;
+export default ProjectTile;

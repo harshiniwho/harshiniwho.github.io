@@ -42,7 +42,42 @@ const content = {
             details: ['Received Smt. Delhi Rani Thulasi Award for scoring centum in AISSCE\'s Computer Science in 2015.', 'Received NTSE scholarship by the NCERT foundation in 2013.', 'Member of Junior Red Cross, a student division of India\'s Red Cross']
         },
     ],
-    skillsTitle: 'skills'
+    skillsTitle: 'skills',
+    skills: {
+        "Programming Languages": ['5000 lines - Java, Python', '1000 lines - JavaScript, C++, C'],
+        "Tools & Technologies": ['Spring', 'NodeJS', 'ReactJS', 'Git', 'MySQL', 'Hadoop', 'Hive']
+    },
+    courseWorkTitle: 'course work',
+    courseWork: ['Natural Language Processing', 'Data Structures', 'Data Mining and Data Warehousing', 'Mobile Computing', 'Project Management', 'Marketing Management' , 'Creative Writng'],
+    courseProjects: [
+        {
+            projectTitle: 'Cryptic Crossword Clue Generator',
+            description: 'Worked on this project as a part of the course - Natural Language Processing elective. The project was the interesction between my interest in cryptic crosswords and NLP.',
+            link: ''
+        },
+        {
+            projectTitle: 'Sequencing items in Top-n personalized recommendations using multiple recommendation techniques',
+            description: 'Worked on this project as a part of my undergraduate thesis. Researched recommendation systems to build a machine learning model that cleans up data and runs through different techniques and weighs the results of each to sequence the top-n items.',
+            link: ''
+        },
+        {
+            projectTitle: 'Optimized weighted routing in wireless networks packet transmissions',
+            description: 'Worked on this project as a part of the course - Mobile Computing elective. Researched and implemented optimized weighted routing techniques in wireless transmissions with network simulator.',
+            link: ''
+        }
+    ],
+    projects: [
+        {
+            projectTitle: 'preethabot',
+            description: '',
+            link: ''
+        },
+        {
+            projectTitle: 'is-that-sexist',
+            description: '',
+            link: ''
+        }
+    ]
 };
 
 export default content;
