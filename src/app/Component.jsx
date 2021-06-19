@@ -1,4 +1,5 @@
 import React from 'react';
+import Copyright from './Copyright';
 
 import Navbar from './Navigation/Navbar';
 import Navlinks from './Navigation/Navlinks';
@@ -16,6 +17,7 @@ function Component(props) {
                 }}
             />
             {props.component}
+            <Copyright />
         </React.Fragment>
     );
 }

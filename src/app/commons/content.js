@@ -77,7 +77,9 @@ const content = {
             description: '',
             link: ''
         }
-    ]
+    ],
+    copyright: "Made with Tears <3",
+    copyrightLine2: "Please do not use any of my images without my consent."
 };
 
 export default content;
