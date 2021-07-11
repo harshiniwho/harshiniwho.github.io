@@ -9,18 +9,21 @@ const content = {
     workExperienceTitle: 'work experience',
     workTiles: [
         {
+            rank: 1,
             company: 'Visa Inc.',
             title: 'Software Engineer',
             duration: 'July \'19 - now',
             details: ['Works in the Platform as a Service team in Data Platform.', 'Working on building an agnostic data movement service portal for customers to schedule and run jobs.', 'Built a quota management system on top of Hadoop for platform users.']
         },
         {
+            rank: 3,
             company: 'Visa Inc.',
             title: 'Software Engineering Intern',
             duration: 'May \'18 - Jul \'18',
             details: ['Worked in the Platform as a Service team in Data Platform.', 'Built an alerting system to capture anomalous, resource intensive jobs running on servers.', 'Worked on ETL pipeline - to extract and process system metrics and present them in a clean, understandable format to provide valuable insights to the team for optimizations on the Hadoop platform.']
         },
         {
+            rank: 4,
             company: 'That1Card',
             title: 'Content Intern',
             duration: 'Nov \'15 - Jan \'16',
@@ -30,12 +33,14 @@ const content = {
     educationTitle: 'education',
     educationTiles: [
         {
+            rank: 2,
             school: 'National Institute of Technology, Tiruchirappalli',
             degree: 'B.Tech in Computer Science and Engineering',
             degreeSub: 'Minor in Management Studies',
             details: ['Graduated July 2019, first class with distinction.', 'Editor of Online Presence, Feeds, the official mediahouse of NITT.', 'Thesis on blah blah blah']
         },
         {
+            rank: 5,
             school: 'Maharishi Vidya Mandir SSS Chennai',
             degree: 'Graduated in 2015 (AISSCE)',
             degreeSub: 'Stream: Science-Computer Science',

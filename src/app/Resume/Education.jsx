@@ -39,12 +39,7 @@ function Education() {
     }));
     return (
         <React.Fragment>
-            <Typography className={classes.name} variant={"h2"}>
-                    {content.educationTitle}
-            </Typography>
-            <Grid className={classes.grid}>
                 {tiles}
-            </Grid>
         </React.Fragment>
     );
 }

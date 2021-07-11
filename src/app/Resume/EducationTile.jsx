@@ -1,4 +1,8 @@
 import React from 'react';
+
+import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import SchoolIcon from '@material-ui/icons/School';
 import { List, ListItem, makeStyles, Typography } from '@material-ui/core';
 
 function EducationTiles(props) {
@@ -25,7 +29,11 @@ function EducationTiles(props) {
      });
     const classes = useStyles();
     return (
-        <div>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--education"
+                date="April 2013"
+                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                icon={<SchoolIcon />}>
             <Typography className={classes.name} variant={"h5"}>
                 {props.school}
             </Typography>
@@ -42,7 +50,7 @@ function EducationTiles(props) {
                     </ListItem>)
                 })}
             </List>
-        </div>
+        </VerticalTimelineElement>
     );
 }
 

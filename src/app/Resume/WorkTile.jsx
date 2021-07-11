@@ -1,6 +1,7 @@
 import React from 'react';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import WorkIcon from '@material-ui/icons/Work';
 import { List, ListItem, makeStyles, Typography } from '@material-ui/core';
 
 function WorkTile(props) {
@@ -16,7 +17,13 @@ function WorkTile(props) {
      });
     const classes = useStyles();
     return (
-        <VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<WorkIcon />}>
             <Typography className={classes.name} variant={"h5"}>
                 {props.company}
             </Typography>

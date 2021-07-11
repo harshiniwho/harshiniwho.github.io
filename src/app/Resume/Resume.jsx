@@ -1,17 +1,14 @@
 import React from 'react';
 
-import Education from './Education';
+import ExperienceTimeline from './ExperienceTimeline';
 import Skills from './Skills';
-import VerticalTimelineComponent from './VerticalTimeline';
-import WorkTiles from './WorkTiles';
+
 
 function Resume() {
     return (
         <React.Fragment>
-            <WorkTiles />
-            <VerticalTimelineComponent />
+            <ExperienceTimeline />
             <Skills />
-            <Education />
         </React.Fragment>
     );
 }

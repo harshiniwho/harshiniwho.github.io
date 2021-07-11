@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { VerticalTimeline }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-
 import { makeStyles, Typography } from '@material-ui/core';
 import WorkTile from './WorkTile';
 import content from '../commons/content';
+
+// reference: https://github.com/stephane-monnot/react-vertical-timeline
 
 function WorkTiles() {
     const useStyles = makeStyles({
@@ -42,12 +41,7 @@ function WorkTiles() {
     }));
     return (
         <React.Fragment>
-            <Typography className={classes.name} variant={"h2"}>
-                    {content.workExperienceTitle}
-            </Typography>
-            <VerticalTimeline>
                 {tiles}
-            </VerticalTimeline>
         </React.Fragment>
     )
 }
