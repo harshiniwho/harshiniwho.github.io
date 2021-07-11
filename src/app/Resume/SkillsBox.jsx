@@ -1,17 +1,11 @@
 import React from 'react';
 
 import { Grid, makeStyles, Typography, ListItem, List } from '@material-ui/core';
+import { listify } from '../commons/methods';
 import content from '../commons/content';
-import ProjectTile from './ProjectTile';
-import SkillsBox from './SkillsBox';
 
-function listify(list) {
-    return list.map(el => {
-        return (<li>{el}</li>);
-    });
-}
 
-function Skills() {
+function SkillsBox() {
     const useStyles = makeStyles({
         root: {
             textAlign: 'center',
@@ -47,32 +41,17 @@ function Skills() {
     const progLangs = listify(content.skills["Programming Languages"]);
     const tools = listify(content.skills["Tools & Technologies"]);
     const courseWork = (<List className={classes.course}> {listify(content.courseWork)} </List>);
-    const courseProjects = (content.courseProjects.map(project => {
-        return (
-            <ProjectTile link={project.link}
-            projectTitle={project.projectTitle}
-            description={project.description}/>
-        );
-    }));
     return (
-        <React.Fragment>
-            <SkillsBox />
-            <Typography className={classes.name} variant={"h2"}>
-                    {content.courseWorkTitle}
-            </Typography>
-            <Grid className={classes.grid}>
+        <Grid className={classes.grid}>
+            <List>
                 {courseWork}
-                <div>
-                    {courseProjects}
-                </div>
-            </Grid>
-            <Typography className={classes.name} variant={"h2"}>
-                    {content.skillsTitle}
-            </Typography>
-            {progLangs}
-            {tools}
-        </React.Fragment>
+            </List>
+            <List>
+                {progLangs}
+                {tools}
+            </List>
+        </Grid>
     );
 }
 
-export default Skills;
+export default SkillsBox;

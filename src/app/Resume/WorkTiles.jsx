@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Grid, makeStyles, Typography } from '@material-ui/core';
+import { VerticalTimeline }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
+import { makeStyles, Typography } from '@material-ui/core';
 import WorkTile from './WorkTile';
 import content from '../commons/content';
 
@@ -42,9 +45,9 @@ function WorkTiles() {
             <Typography className={classes.name} variant={"h2"}>
                     {content.workExperienceTitle}
             </Typography>
-            <Grid className={classes.grid}>
+            <VerticalTimeline>
                 {tiles}
-            </Grid>
+            </VerticalTimeline>
         </React.Fragment>
     )
 }

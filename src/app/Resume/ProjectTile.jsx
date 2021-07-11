@@ -23,8 +23,8 @@ function ProjectTile(props) {
             <Link to={props.link}>
                 <LinkIcon />
             </Link>
-            <Typography className={classes.name} variant={"h6"}>
-                    <i>{props.description}</i>
+            <Typography className={classes.name} variant={"h7"}>
+                    {props.description}
             </Typography>   
             {/* <List>
                 {props.details.map((detail) => {

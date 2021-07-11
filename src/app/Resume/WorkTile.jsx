@@ -1,4 +1,6 @@
 import React from 'react';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import { List, ListItem, makeStyles, Typography } from '@material-ui/core';
 
 function WorkTile(props) {
@@ -14,7 +16,7 @@ function WorkTile(props) {
      });
     const classes = useStyles();
     return (
-        <div>
+        <VerticalTimelineElement>
             <Typography className={classes.name} variant={"h5"}>
                 {props.company}
             </Typography>
@@ -31,7 +33,7 @@ function WorkTile(props) {
                     </ListItem>)
                 })}
             </List>
-        </div>
+        </VerticalTimelineElement>
     );
 }
 
