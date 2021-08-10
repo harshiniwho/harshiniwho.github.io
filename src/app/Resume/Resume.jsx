@@ -7,7 +7,7 @@ import Skills from './Skills';
 function Resume() {
     return (
         <React.Fragment>
-            <ExperienceTimeline />
+            <ExperienceTimeline id="resume"/>
             <Skills />
         </React.Fragment>
     );
