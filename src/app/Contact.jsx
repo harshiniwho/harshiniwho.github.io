@@ -1,6 +1,6 @@
 import React from 'react';
-import { makeStyles, Typography, Link } from '@material-ui/core';
-import { LinkedIn, GitHub, Twitter } from '@material-ui/icons';
+import { makeStyles, Typography } from '@material-ui/core';
+import Links from './Links';
 
 import content from './commons/content';
 
@@ -31,16 +31,6 @@ function Contact() {
         details: {
             fontFamily: "'Old Standard TT', serif",
         },
-        link: {
-            alignItems: 'flex-end',
-            color: 'inherit',
-            margin: '3rem 1rem auto 0',
-            textDecoration: "none",
-            "&:hover,&:focus": {
-                color: "inherit",
-                textDecoration: 'none'
-            }
-        },
         img: {
             ...preventImage,
             width: '2.5rem',
@@ -65,29 +55,7 @@ function Contact() {
                 <Typography className={classes.details} variant={"h6"}>
                     {content.contactDetails}
                 </Typography>
-                <div>
-                    <Link
-                    className={classes.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href={content.linkedin}>
-                         <LinkedIn /> 
-                    </Link>
-                    <Link
-                    className={classes.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href={content.github}>
-                        <GitHub />
-                    </Link>
-                    <Link
-                    className={classes.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href={content.twitter}>
-                         <Twitter />
-                    </Link>
-                </div>
+                <Links/>
             </div>
             <img className={classes.img} src={bottomPattern}></img>
         </React.Fragment>

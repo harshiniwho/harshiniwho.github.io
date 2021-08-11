@@ -16,7 +16,7 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <HashLink smooth to='/' className={classes.dropdownLink}>
+        <HashLink smooth to='/#home' className={classes.dropdownLink}>
           <h3>
               home
           </h3>

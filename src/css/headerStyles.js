@@ -28,15 +28,15 @@ import {
       alignItems: "center",
       flexFlow: "row nowrap",
       justifyContent: "flex-start",
-      position: "relative",
+      position: "sticky",
       zIndex: "unset",
     },
     absolute: {
-      position: "absolute",
+      position: "sticky",
       zIndex: "1100",
     },
     fixed: {
-      position: "fixed",
+      position: "sticky",
       zIndex: "1100",
     },
     container: {
