@@ -1,5 +1,7 @@
 const content = {
-    opening: 'hi, I am Harshini.',
+    opening: 'Hi, I am Harshini.',
+    shortBio1: 'I am a software engineer, who dabbles more often than not in writing.',
+    shortBio2: 'Scroll to know a little more about me and the causes I believe in!',
     about: "My name is pronounced as easy as my pronouns - her/she-nee. I am a software engineer currently working at Visa Inc. I have had experience working on a little bit of everything in the domain of computer science, primarily being a backend engineer. When I am not stealing code from stackoverflow, I am usually lost in a book or trying to capture my world in words. \n Check out my feminism corner for stories I think you should hear about. Feel free to reach out to me on the intersection of women, coding and books!",
     linkedin: "https://www.linkedin.com/in/harshini-ramanujam/",
     github: "https://github.com/harshiniwho",

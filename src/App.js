@@ -1,28 +1,26 @@
-import React from 'react';
-import { Router, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import './App.css';
 
-import { HashLink, NavHashLink } from 'react-router-hash-link';
-
-import Contact from './app/Contact';
-import Component from './app/Component';
-import Feminism from './app/Feminism';
-import Jumbotron from './app/Jumbotron';
-import Resume from './app/Resume/Resume';
-import Writing from './app/Writing';
-
-var hist = createBrowserHistory();
+import Feature from './components/Feature';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Jumbotron from './components/Jumbotron';
+import Portfolio from './components/Portfolio';
+import Promo from './components/Promo';
 
 function App() {
-  
   return (
-    <React.StrictMode>
-      <Router history={hist}>
-        <Switch>
-          <Route path="/" component={() => <Component component={<Jumbotron />} />} />
-        </Switch>
-      </Router>
-    </React.StrictMode>
+	<div className="homepage is-preload">
+		<div id="page-wrapper">
+				<div id="header-wrapper">
+					<Header />
+					<Jumbotron />
+				</div>
+				<Feature />
+				<Promo />
+				<Portfolio />
+        <Footer />
+		</div>
+    </div>
   );
 }
 
