@@ -1,38 +1,39 @@
 import React from 'react';
 
+import content from './content';
+
+function article(props) {
+    return (
+        <section className="col-4 col-12-narrower feature">
+            <div className="image-wrapper first">
+                <a href="#" className="image featured"><img src={props.img} alt="" /></a>
+            </div>
+            <p>{props.description}</p>
+        </section>
+    );
+}
+
+const articles = (<React.Fragment>
+        {content.writing.map((a) => {
+            return (
+                article(a)
+            );
+        })}
+    </React.Fragment>) 
+
 function Portfolio() {
     return (
         <div className="wrapper">
             <section id="portfolio" className="container">
                 <header className="major">
-                    <h2>Sed magna consequat lorem curabitur tempus</h2>
-                    <p>Elit aliquam vulputate egestas euismod nunc semper vehicula lorem blandit</p>
+                    <h2>{content.writingTitle}</h2>
+                    <p>{content.writingDescription}</p>
                 </header>
                 <div className="row features">
-                    <section className="col-4 col-12-narrower feature">
-                        <div className="image-wrapper first">
-                            <a href="#" className="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                    </section>
-                    <section className="col-4 col-12-narrower feature">
-                        <div className="image-wrapper">
-                            <a href="#" className="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                    </section>
-                    <section className="col-4 col-12-narrower feature">
-                        <div className="image-wrapper">
-                            <a href="#" className="image featured"><img src="images/pic05.jpg" alt="" /></a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                    </section>
+                    {articles}
                 </div>
                 <ul className="actions major">
-                    <li><a href="#" className="button">Elevate my awareness</a></li>
+                    <li><a href={content.mediumLink} target="_blank" className="button">{content.writingButton}</a></li>
                 </ul>
             </section>
         </div>

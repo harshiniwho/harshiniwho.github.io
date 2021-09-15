@@ -13,7 +13,7 @@ function Jumbotron() {
                 {content.shortBio2}
             </p>
             <ul className="actions">
-                <li><a href="#" className="button">Connect with me <br/> on LinkedIn</a></li>
+                <li><a href={content.linkedin} target="_blank" className="button">Connect with me <br/> on LinkedIn</a></li>
             </ul>
         </section>
     );

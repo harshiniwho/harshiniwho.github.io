@@ -1,7 +1,8 @@
 import React from 'react';
-import { makeStyles, Typography } from '@material-ui/core';
-import Links from './Links';
 
+import { makeStyles } from '@material-ui/core';
+
+import Links from './Links';
 import content from './content';
 
 function Contact() {
@@ -32,11 +33,6 @@ function Contact() {
     return (
         <React.Fragment >
             <div className={classes.content}>
-                {/* TODO: remove the break lines */}
-                <br />
-                {/* <Typography className={classes.details} variant={"h6"}>
-                    {content.contactDetails}
-                </Typography> */}
                 <Links/>
             </div>
         </React.Fragment>

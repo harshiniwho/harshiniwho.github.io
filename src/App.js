@@ -1,4 +1,5 @@
 import './App.css';
+import About from './components/About';
 
 import Feature from './components/Feature';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ function App() {
 					<Header />
 					<Jumbotron />
 				</div>
+				<About />
 				<Feature />
 				<Promo />
 				<Portfolio />

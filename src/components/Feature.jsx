@@ -1,5 +1,7 @@
 import React from 'react';
 
+import content from './content';
+
 function Feature() {
     return (
         <div id="experience" className="wrapper">
@@ -10,14 +12,11 @@ function Feature() {
                             <a href="#" className="image featured first"><img src="images/pic01.jpg" alt="" /></a>
                         </div>
                         <header>
-                            <h2>Semper magna neque vel<br />
-                            adipiscing curabitur</h2>
+                            <h2>{content.professionalExperienceTitle}</h2>
                         </header>
-                        <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                        adipiscing elit. Curabitur vel sem sit.</p>
+                        <p>{content.professionalExperienceDescription}</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">Elevate my awareness</a></li>
+                            <li><a href={content.linkedin} className="button">{content.professionalExperienceButton}</a></li>
                         </ul>
                     </section>
                     <section className="col-6 col-12-narrower feature">
@@ -25,14 +24,11 @@ function Feature() {
                             <a href="#" className="image featured"><img src="images/pic02.jpg" alt="" /></a>
                         </div>
                         <header>
-                            <h2>Amet lorem ipsum dolor<br />
-                            sit consequat magna</h2>
+                            <h2>{content.projectsTitle}</h2>
                         </header>
-                        <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                        adipiscing elit. Curabitur vel sem sit.</p>
+                        <p>{content.projectsDescription}</p>
                         <ul className="actions">
-                            <li><a href="#" className="button">Elevate my awareness</a></li>
+                            <li><a href={content.github} className="button">{content.projectsButton}</a></li>
                         </ul>
                     </section>
                 </div>
