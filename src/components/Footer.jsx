@@ -1,22 +1,23 @@
 import React from 'react';
+import Contact from './Contact';
 
+import content from './content';
 import Copyright from './Copyright';
-import Form from './Form';
-import SocialMedia from './SocialMedia';
 
 function Footer() {
     return (
         <div id="footer-wrapper">
             <div id="footer" className="container">
                 <header className="major">
-                    <h2>Euismod aliquam vehicula lorem</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit<br />
-                    dolor neque semper magna lorem ipsum feugiat veroeros lorem ipsum dolore.</p>
+                    <h2>{content.contactTitle}</h2>
+                    <p>
+                        {content.contactDetails1}<br />
+                        {content.contactDetails2}
+                    </p>
                 </header>
                 <div className="row">
-                    <Form />
-                    <SocialMedia />
                 </div>
+                <Contact />
             </div>
             <Copyright />
         </div>

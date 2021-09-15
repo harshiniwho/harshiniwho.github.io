@@ -6,8 +6,9 @@ const content = {
     linkedin: "https://www.linkedin.com/in/harshini-ramanujam/",
     github: "https://github.com/harshiniwho",
     twitter: "https://twitter.com/harshiniwho",
-    contactTitle: "contact",
-    contactDetails: "Reach out to me if I can help you with a project or an article! I would love to collaborate. Find me elsewhere on the internet: Email: harshiniramanujam@gmail.com",
+    contactTitle: "Thanks for scrolling!",
+    contactDetails1: "Reach out to me if I can help you with a project or an article! I would love to collaborate.",
+    contactDetails2: "Find me elsewhere on the internet: Email: harshiniramanujam@gmail.com",
     workExperienceTitle: 'work experience',
     workTiles: [
         {
@@ -85,7 +86,24 @@ const content = {
             link: ''
         }
     ],
-    copyright: "Made with Tears <3",
+    writing: [
+        {
+            title: 'Why I write',
+            link: 'https://medium.com/@harshiniwho/a-room-of-ones-own-why-i-write-410ba02c99d9',
+            description: 'Recently, I meditated on why I wanted to write and started my own blog after years afters shying away from it...'
+        },
+        {
+            title: 'Rules of Engagement',
+            link: 'https://feedsnitt.com/2017/12/11/rules-of-engagement/',
+            description: 'A quirky piece I wrote during my undergrad on how to navigate short social interactions.'
+        },
+        {
+            title: 'Music in the 21st Century',
+            link: 'https://issuu.com/feeds.nitt/docs/septprint',
+            description: 'An edition of the student magazine I help run during my undergrad.'
+        }
+    ],
+    copyright: "Harshini Ramanujam. All rights reserved.",
     copyrightLine2: "Please do not use any of my images without my consent."
 };
 
