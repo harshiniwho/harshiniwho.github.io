@@ -1,5 +1,5 @@
 import React from "react";
-import content from './content';
+import content from './commons/content';
 
 import { Link, makeStyles } from '@material-ui/core';
 import { LinkedIn, GitHub, Twitter } from '@material-ui/icons';
@@ -10,7 +10,7 @@ function Links(props) {
             alignItems: 'flex-end',
             color: 'black',
             margin: '3rem 1rem auto 0',
-            fontSize: '200px',
+            fontSize: '50px',
             textDecoration: "none",
             "&:hover,&:focus": {
                 color: "inherit",

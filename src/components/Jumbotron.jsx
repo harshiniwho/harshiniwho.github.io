@@ -1,6 +1,6 @@
 import React from 'react';
 
-import content from './content';
+import content from './commons/content';
 
 function Jumbotron() {
     return (

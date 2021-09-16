@@ -1,6 +1,6 @@
 import React from 'react';
 
-import content from './content';
+import content from './commons/content';
 
 function Feature() {
     return (
@@ -8,9 +8,9 @@ function Feature() {
             <div className="container">
                 <div className="row">
                     <section className="col-6 col-12-narrower feature">
-                        <div className="image-wrapper first">
-                            <a href="#" className="image featured first"><img src="images/pic01.jpg" alt="" /></a>
-                        </div>
+                        {/* <div className="image-wrapper first">
+                            <a href="#" className="image featured first"><img src="images/feature-1.png" alt="" /></a>
+                        </div> */}
                         <header>
                             <h2>{content.professionalExperienceTitle}</h2>
                         </header>
@@ -20,9 +20,9 @@ function Feature() {
                         </ul>
                     </section>
                     <section className="col-6 col-12-narrower feature">
-                        <div className="image-wrapper">
-                            <a href="#" className="image featured"><img src="images/pic02.jpg" alt="" /></a>
-                        </div>
+                        {/* <div className="image-wrapper">
+                            <a href="#" className="image featured"><img src="images/feature-2.png" alt="" /></a>
+                        </div> */}
                         <header>
                             <h2>{content.projectsTitle}</h2>
                         </header>

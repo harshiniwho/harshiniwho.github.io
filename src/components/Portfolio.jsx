@@ -1,12 +1,13 @@
 import React from 'react';
 
-import content from './content';
+import content from './commons/content';
 
 function article(props) {
+    console.log("in here ", props.img);
     return (
         <section className="col-4 col-12-narrower feature">
             <div className="image-wrapper first">
-                <a href="#" className="image featured"><img src={props.img} alt="" /></a>
+                <a href={props.link} target="_blank" className="image featured"><img src={props.img} alt="" /></a>
             </div>
             <p>{props.description}</p>
         </section>

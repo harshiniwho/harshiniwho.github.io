@@ -1,6 +1,6 @@
 import React from 'react';
 
-import content from './content';
+import content from './commons/content';
 
 function About() {
     return (
@@ -12,7 +12,7 @@ function About() {
                             <header>
                                 <h2>{content.aboutTitle}</h2>
                             </header>
-                            <a href="#" className="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                            <div className="image featured"><img src="images/pic01.jpg"  /></div>
                             <p>{content.about1}</p>
                             <p>{content.about2}</p>
                             <p>{content.about3}</p>
@@ -32,7 +32,7 @@ function About() {
                         </ul>
                     </section>
                     <section>
-                        <img src="images/pic07.jpg" alt="" />
+                        {/* <img src="images/pic07.jpg" alt="" /> */}
                         <header>
                             <h3>{content.speakerTitle}</h3>
                         </header>
@@ -42,6 +42,7 @@ function About() {
                         </ul>
                     </section>
                 </section>
+                <br />
                 <br />
             </div>
         </div>
