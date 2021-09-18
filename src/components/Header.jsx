@@ -1,15 +1,27 @@
 import React from 'react';
-
+import { HashLink } from 'react-router-hash-link';
 function Header() {
     return (
         <div id="header" className="container">
             <h1 id="logo"><a href="/">WELCOME</a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#experience">EXPERIENCE</a></li>
-                    <li className="break"><a href="#portfolio">WRITING</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li>
+                        <HashLink smooth to="#about"> ABOUT
+                        </HashLink>
+                    </li>
+                    <li>
+                        <HashLink smooth to="#experience"> EXPERIENCE
+                        </HashLink>
+                    </li>
+                    <li className="break">
+                        <HashLink smooth to="#portfolio"> WRITING
+                        </HashLink>
+                    </li>
+                    <li>
+                        <HashLink smooth to="#contact"> CONTACT
+                        </HashLink>
+                    </li>
                 </ul>
             </nav>
     </div>

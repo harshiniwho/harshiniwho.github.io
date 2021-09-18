@@ -1,3 +1,5 @@
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from "history";
 import './App.css';
 import About from './components/About';
 
@@ -8,21 +10,26 @@ import Jumbotron from './components/Jumbotron';
 import Portfolio from './components/Portfolio';
 import Promo from './components/Promo';
 
+var hist = createBrowserHistory();
+
 function App() {
   return (
-	<div className="homepage is-preload">
-		<div id="page-wrapper">
-				<div id="header-wrapper">
-					<Header />
-					<Jumbotron />
-				</div>
-				<About />
-				<Feature />
-				<Promo />
-				<Portfolio />
-        <Footer />
+	  <Router history={hist}>
+		  <div className="homepage is-preload">
+			<div id="page-wrapper">
+					<div id="header-wrapper">
+						<Header />
+						<Jumbotron />
+					</div>
+					<About />
+					<Feature />
+					<Promo />
+					<Portfolio />
+			<Footer />
+			</div>
 		</div>
-    </div>
+	  </Router>
+	
   );
 }
 
