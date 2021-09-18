@@ -1,7 +1,7 @@
 import React from 'react';
 import Contact from './Contact';
 
-import content from './commons/content';
+import content from '../commons/content';
 import Copyright from './Copyright';
 import YoutubeEmbed from './YouTubeEmbed';
 
@@ -22,7 +22,7 @@ function Footer() {
                                 <YoutubeEmbed embedId="cMcQ1nnaOXU" />
                             </section> */}
                         </section>
-                        <header className="major">
+                        <header id="contact" className="major">
                             <h4> 
                                 {content.contactDetails1}<br />
                                 {content.contactDetails2}<br />

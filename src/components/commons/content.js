@@ -45,6 +45,47 @@ const content = {
             link: ''
         }
     ],
+    storiesTitle: 'Check out something I love',
+    storyRefresh: 'Refresh for something new',
+    stories: [
+        {
+            title: 'Accents - A Poem',
+            link: 'https://youtu.be/qtOXiNx4jgQ',
+            description: 'A favourite poem of mine - Accents performed by Denice Forhman.',
+            img: "images/article-1.png"
+        },
+        {
+            title: 'Learn about the Genderbread',
+            link: 'https://www.genderbread.org/resource/genderbread-person-v4-0',
+            description: 'A favourite poem - Accents performed by Denice Forhman.',
+            img: "images/article-1.png"
+        },
+        {
+            title: 'Preetha chan',
+            link: 'https://youtu.be/qtOXiNx4jgQ',
+            description: 'A favourite poem of mine - Accents performed by Denice Forhman.',
+            img: "images/article-1.png"
+        },
+        {
+            title: 'LIFE',
+            link: 'https://youtu.be/qtOXiNx4jgQ',
+            description: 'A favourite poem of mine - Accents performed by Denice Forhman.',
+            img: "images/article-1.png"
+        },
+        {
+            title: 'Test',
+            link: 'https://youtu.be/qtOXiNx4jgQ',
+            description: 'A favourite poem of mine - Accents performed by Denice Forhman.',
+            img: "images/article-1.png"
+        },
+        {
+            title: 'Test',
+            link: 'https://youtu.be/qtOXiNx4jgQ',
+            description: 'A favourite poem of mine - Accents performed by Denice Forhman.',
+            img: "images/article-1.png"
+        }
+    ],
+    quote: 'No one can make you feel inferior without your consent. - Eleanor Roosevelt',
     writing: [
         {
             title: 'Why I write',

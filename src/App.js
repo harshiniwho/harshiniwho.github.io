@@ -2,7 +2,7 @@ import './App.css';
 import About from './components/About';
 
 import Feature from './components/Feature';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
 import Portfolio from './components/Portfolio';

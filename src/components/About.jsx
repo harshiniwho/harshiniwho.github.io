@@ -4,7 +4,7 @@ import content from './commons/content';
 
 function About() {
     return (
-        <div className="container">
+        <div id="about" className="container">
             <br />
             <div className="row gtr-150">
                 <div className="col-8 col-12-narrower">

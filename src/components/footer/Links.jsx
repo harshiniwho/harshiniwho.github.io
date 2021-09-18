@@ -1,5 +1,5 @@
 import React from "react";
-import content from './commons/content';
+import content from '../commons/content';
 
 import { Link, makeStyles } from '@material-ui/core';
 import { LinkedIn, GitHub, Twitter } from '@material-ui/icons';

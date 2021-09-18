@@ -1,6 +1,6 @@
 import React from 'react';
 
-import content from './commons/content';
+import content from '../commons/content';
 
 function Copyright() {
     return (
