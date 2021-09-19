@@ -16,7 +16,7 @@ function Feature() {
                         </header>
                         <p>{content.professionalExperienceDescription}</p>
                         <ul className="actions">
-                            <li><a href={content.linkedin} className="button">{content.professionalExperienceButton}</a></li>
+                            <li><a target="_blank" href={content.linkedin} className="button">{content.professionalExperienceButton}</a></li>
                         </ul>
                     </section>
                     <section className="col-6 col-12-narrower feature">
@@ -28,7 +28,7 @@ function Feature() {
                         </header>
                         <p>{content.projectsDescription}</p>
                         <ul className="actions">
-                            <li><a href={content.github} className="button">{content.projectsButton}</a></li>
+                            <li><a target="_blank" href={content.github} className="button">{content.projectsButton}</a></li>
                         </ul>
                     </section>
                 </div>

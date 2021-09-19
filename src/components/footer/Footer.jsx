@@ -18,9 +18,6 @@ function Footer() {
                             <section className="col-6 col-12-narrower feature">
                                 <YoutubeEmbed embedId="KH9PY49ttLs" />
                             </section>
-                            {/* <section className="col-6 col-12-narrower feature">
-                                <YoutubeEmbed embedId="cMcQ1nnaOXU" />
-                            </section> */}
                         </section>
                         <header id="contact" className="major">
                             <h4> 

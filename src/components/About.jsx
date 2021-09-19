@@ -12,10 +12,11 @@ function About() {
                             <header>
                                 <h2>{content.aboutTitle}</h2>
                             </header>
-                            <div className="image featured"><img src="images/pic01.jpg"  /></div>
+                            <div className="image featured"><img src="images/option2.png"  /></div>
                             <p>{content.about1}</p>
                             <p>{content.about2}</p>
                             <p>{content.about3}</p>
+                            <br/>
                         </article>
 
                 </div>
@@ -28,7 +29,7 @@ function About() {
                         </header>
                         <p>{content.readerContent}</p>
                         <ul class="actions">
-                            <li><a href={content.readerLink} class="button">{content.readerButton}</a></li>
+                            <li><a href={content.readerLink} target="_blank" class="button">{content.readerButton}</a></li>
                         </ul>
                     </section>
                     <section>
@@ -38,7 +39,7 @@ function About() {
                         </header>
                         <p>{content.speakerContent}</p>
                         <ul class="actions">
-                            <li><a href="#" class="button">{content.speakerButton}</a></li>
+                            <li><a href={content.speechLink} target="_blank" class="button">{content.speakerButton}</a></li>
                         </ul>
                     </section>
                 </section>

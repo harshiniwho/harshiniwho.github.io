@@ -15,13 +15,14 @@ function Promo() {
         <div id="promo-wrapper">
            <h2> {content.storiesTitle} </h2>
            <br />
-           <a target="_blank" href={story.link}>
             <div>
+                <a target="_blank" href={story.link}>
                 <section id="promo">
                     <h2>{story.title}</h2>
                 </section>
+                </a>
             </div>
-            </a>
+            
         <br />
         <a onClick={refreshHandler} className="button">{content.storyRefresh}</a>
         </div>

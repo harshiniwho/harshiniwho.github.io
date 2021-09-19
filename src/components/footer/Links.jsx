@@ -8,7 +8,7 @@ function Links(props) {
     const useStyles = makeStyles({
         link: {
             alignItems: 'flex-end',
-            color: 'black',
+            color: '#52575c',
             margin: '3rem 1rem auto 0',
             fontSize: '50px',
             textDecoration: "none",
