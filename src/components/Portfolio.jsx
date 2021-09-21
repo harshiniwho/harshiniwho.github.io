@@ -3,7 +3,6 @@ import React from 'react';
 import content from './commons/content';
 
 function article(props) {
-    console.log("in here ", props.img);
     return (
         <section className="col-4 col-12-narrower feature">
             <div className="image-wrapper first">

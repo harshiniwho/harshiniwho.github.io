@@ -13,7 +13,7 @@ function Links(props) {
             fontSize: '50px',
             textDecoration: "none",
             "&:hover,&:focus": {
-                color: "inherit",
+                color: "#f3585",
                 textDecoration: 'none'
             }
         },

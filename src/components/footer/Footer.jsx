@@ -22,7 +22,11 @@ function Footer() {
                         <header id="contact" className="major">
                             <h4> 
                                 {content.contactDetails1}<br />
+                            </h4>
+                            <h4>
                                 {content.contactDetails2}<br />
+                            </h4>
+                            <h4>
                                 {content.email}
                             </h4>
                         </header>

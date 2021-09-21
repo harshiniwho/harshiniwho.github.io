@@ -3,13 +3,16 @@ import React, { useState } from 'react';
 import content from './commons/content';
 
 function Promo() {
+    const [storyId, setStoryId] = useState(0);
     const [story, setStory] = useState({
         ...content.stories[0]
     });
 
     function refreshHandler() {
-        const random = Math.floor((Math.random() * 6));
-        setStory(content.stories[random])
+        const updateStory = storyId + 1;
+        console.log(updateStory);
+        setStoryId(updateStory);
+        setStory(content.stories[storyId%6])
     }
     return (
         <div id="promo-wrapper">
