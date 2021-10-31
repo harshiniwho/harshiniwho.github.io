@@ -25,22 +25,22 @@ function About() {
 
                     <section id="sidebar">
                         <section>
-                            <header>
-                                <h3>{content.readerTitle}</h3>
-                            </header>
-                            <p>{content.readerContent}</p>
-                            <ul class="actions">
-                                <li><a href={content.readerLink} target="_blank" class="button">{content.readerButton}</a></li>
-                            </ul>
-                        </section>
-                        <section>
                             {/* <img src="images/pic07.jpg" alt="" /> */}
                             <header>
                                 <h3>{content.speakerTitle}</h3>
                             </header>
                             <p>{content.speakerContent}</p>
                             <ul class="actions">
-                                <li><a href={content.speechLink} target="_blank" class="button">{content.speakerButton}</a></li>
+                                <li><a smooth href={content.speechLink} class="button">{content.speakerButton}</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header>
+                                <h3>{content.readerTitle}</h3>
+                            </header>
+                            <p>{content.readerContent}</p>
+                            <ul class="actions">
+                                <li><a href={content.readerLink} target="_blank" class="button">{content.readerButton}</a></li>
                             </ul>
                         </section>
                     </section>

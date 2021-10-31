@@ -3,7 +3,7 @@ const content = {
     shortBio1: 'I am a software engineer, who dabbles more often than not in writing.',
     shortBio2: 'Scroll to know a little more about me and what I am passionate about.',
     aboutTitle: "About me",
-    about1: "My name is pronounced as easy as my pronouns - her/she-nee. Currently, I work at Visa Inc. I have had experience working on a little bit of everything in the domain of computer science, primarily being a backend engineer. When I am not stealing code from StackOverflow, I am usually lost in a book or trying to capture my world in words.",
+    about1: "My name is pronounced as easy as my pronouns - her/she-nee. Currently, I work at Visa Inc. I have had experience working on a little bit of everything in the domain of computer science, primarily being a backend engineer. When I am not tapping at my code, I am usually lost in a book or trying to capture my world in words.",
     about2: "I graduated from the National Institute of Technology, Trichy in 2019 with a major in Computer Science and Engineering and a minor in Management Studies. During my time there, I tried my hand at everything from running a magazine to pulling together ACM-ICPC style events.",
     about3: "Feel free to reach out to me on the intersection of women, coding and books.",
     readerTitle: 'I read!',
@@ -12,8 +12,8 @@ const content = {
     readerLink: 'https://www.goodreads.com/user/show/5503374-harshini',
     speakerTitle: 'I write!',
     speakerContent: 'I have been writng since I can remember, I now try to bring my words to life in spoken word.',
-    speakerButton: 'Check out a speech!  ',
-    speechLink: 'https://www.facebook.com/vspeakersBLR/videos/1717696525033525/?__so__=channel_tab&__rv__=all_videos_card',
+    speakerButton: 'Check out what I write!  ',
+    speechLink: '#portfolio',
     linkedin: "https://www.linkedin.com/in/harshini-ramanujam/",
     github: "https://github.com/harshiniwho",
     twitter: "https://twitter.com/harshiniwho",
@@ -87,7 +87,7 @@ const content = {
     writingButton: "Check out more of my writing here",
     mediumLink: "https://medium.com/@harshiniwho",
     copyright: "Harshini Ramanujam. All rights reserved.",
-    copyrightLine2: "Please do not use any of my images without my consent."
+    copyrightLine2: "Do not use any of my images without my consent."
 };
 
 export default content;

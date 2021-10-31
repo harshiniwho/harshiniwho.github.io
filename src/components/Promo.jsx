@@ -19,7 +19,7 @@ function Promo() {
            <h2> {content.storiesTitle} </h2>
            <br />
             <div>
-                <a target="_blank" href={story.link}>
+                <a style={{borderBottom: 'none'}} target="_blank" href={story.link}>
                 <section id="promo">
                     <h2>{story.title}</h2>
                 </section>
